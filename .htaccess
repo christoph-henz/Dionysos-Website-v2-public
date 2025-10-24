@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+
+# Regel für API-Umleitung von /api/ zu /public/api/
+RewriteRule ^api/(.*)$ public/api/$1 [L]
+
+# Ausnahme für API-Dateien - diese sollen direkt erreichbar sein
+RewriteCond %{REQUEST_URI} !^/public/api/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [QSA,L]

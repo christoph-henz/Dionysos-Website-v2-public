@@ -1,0 +1,19 @@
+{
+    "name": "chris/dionysosv2",
+    "autoload": {
+        "psr-4": {
+            "Dionysosv2\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christoph Henz",
+            "email": "christophhenz@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-mysqli": "*",
+        "ext-pdo": "*",
+        "dompdf/dompdf": "^3.1"
+    }
+}

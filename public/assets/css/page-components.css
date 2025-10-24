@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(337, 100%, 4%);
+    /*background-color: white;*/
+}
+
+:root {
+    /* Hauptfarben */
+    --primaryBackColor1: #4B3621; /* Dunkles Schokoladenbraun (Primärer Hintergrund) */
+    --secondaryBackColor2: #6F4F28; /* Kaffee Braun (Sekundärer Hintergrund) */
+    --borderColor2: #2C3E50; /* Dunkles Marmor-Grau (Für Boxen oder Ränder) */
+    --color5: #D4A46A; /* Sandbraun (Akzentfarbe für Links und Buttons) */
+    --titleColor1: #F0E5D8; /* Helles Beige (Titel und Hauptüberschrift) */
+    --plainTextColor3: #B4B4B4; /* Sanftes Grau (Text für weniger hervorgehobene Bereiche) */
+    --panelColor: #7C6B3F; /* Olivenholz (Panel Hintergrundfarbe) */
+    --panelOverColor: #A8B27A; /* Moosgrün (Panel Hover Hintergrund) */
+    --panelActiveColor: #FF6F3C; /* Sonnenuntergang Orange (Panel aktive Farbe) */
+
+    /* Akzentfarben */
+    --sunsetOrange: #FF6F3C; /* Sonnenuntergang Orange für Akzent-Effekte */
+    --honeyYellow: #D7A84E; /* Honig-Gelb für wichtige Call to Action Buttons */
+
+    /* Textfarben */
+    --creamWhite: #F6F4E0; /* Creme Weiß für Text */
+    --softGrey: #B4B4B4; /* Sanftes Grau für sekundären Text */
+    --darkGrey: #636363; /* Dunkles Grau für weniger dominante Texte */
+    --white: #FFFFFF; /* Weiß für Text oder Icons auf dunklen Hintergründen */
+
+    /* Hintergrundfarben */
+    --backgroundMain: var(--primaryBackColor1); /* Dunkles Schokoladenbraun als Hintergrund */
+    --backgroundSecondary: var(--secondaryBackColor2); /* Kaffee Braun für sekundäre Bereiche */
+    --backgroundHighlight: var(--panelColor); /* Olivenholz für spezielle Akzentbereiche */
+
+    /* Links und Buttons */
+    --linkColor: var(--color5); /* Sandbraun für Links */
+    --linkHoverColor: var(--sunsetOrange); /* Sonnenuntergang Orange für Links Hover */
+    --buttonColor: var(--secondaryBackColor2); /* Kaffee Braun für Buttons */
+    --buttonHoverColor: var(--sunsetOrange); /* Hover Effekt mit Sonnenuntergang Orange */
+    --ctaButtonColor: var(--honeyYellow); /* Honig-Gelb für Call to Action Buttons */
+    --ctaButtonHoverColor: var(--panelActiveColor); /* Olivenholz für CTA-Button Hover */
+
+    /* Schatten und Übergänge */
+    --boxShadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Weicher Schatten */
+    --hoverTransition: all 0.3s ease; /* Sanfter Übergang für Hover-Effekte */
+}

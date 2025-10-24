@@ -1,0 +1,121 @@
+.intro-container {
+    position: relative;
+    background: url('../img/wood.jpg') center/cover fixed;
+    background-size: 100% 100%;
+    height: 200%;
+    z-index: 1;
+}
+
+.main-container {
+    display: block;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+    background: url(../img/wood.jpg) center;
+}
+.menuqr-language-switcher {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#menuqr-pdf .menu-section2 {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menuqr-pdf-viewer, #menuqr-pdf .menu-section2 {
+    margin-top: 60px;
+    text-align: center;
+    background: rgba(255,255,255,0.92);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(80,0,0,0.10);
+    padding: 32px 16px 24px 16px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-navigation {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+}
+.menu-nav-button {
+    padding: 8px 16px;
+    background: linear-gradient(to bottom, #8B4513, #654321);
+    color: #F0E5D8;
+    border: 1px solid #D4A46A;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.menu-nav-button:hover {
+    background: linear-gradient(to bottom, #A0522D, #8B4513);
+    border-color: #FFD700;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.menu-nav-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+.page-wrapper {
+    perspective: 2000px;
+    position: relative;
+    transition: transform 0.3s ease;
+    max-height: 90vh;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.page-flip {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.canvas-page {
+    transform-origin: left center;
+    transition: transform 0.6s ease;
+    backface-visibility: hidden;
+    border: 1px solid #ccc;
+    max-height: 90vh;
+    width: 90%;
+    max-width: 420px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(80,0,0,0.08);
+}
+@media (max-width: 900px) {
+    #menuqr-pdf .page-flip {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+    .canvas-page {
+        max-width: 95vw;
+        height: auto !important;
+        margin: 0 auto;
+    }
+    .page-wrapper {
+        max-height: none;
+    }
+}
+
+@media (min-width: 901px) {
+    .menuqr-language-switcher {
+        padding-top: 5%;
+    }
+}

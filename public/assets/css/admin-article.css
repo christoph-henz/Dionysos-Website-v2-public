@@ -1,0 +1,132 @@
+/* Artikelverwaltung Admin Styles */
+.admin-article-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 32px 40px;
+}
+.admin-article-container h1,
+.admin-article-container h2 {
+    color: #2c3e50;
+    margin-bottom: 18px;
+}
+.admin-article-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+.admin-article-container input[type="text"],
+.admin-article-container input[type="number"] {
+    padding: 8px 12px;
+    border: 1px solid #dbe2e8;
+    border-radius: 6px;
+    font-size: 1em;
+    min-width: 120px;
+}
+.admin-article-container button {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 6px;
+}
+.admin-article-container .btn-success {
+    background: #27ae60;
+    color: #fff;
+}
+.admin-article-container .btn-primary {
+    background: #2980b9;
+    color: #fff;
+}
+.admin-article-container .btn-danger {
+    background: #c0392b;
+    color: #fff;
+}
+.admin-article-container table.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 32px;
+}
+.admin-article-container table.admin-table th,
+.admin-article-container table.admin-table td {
+    border: 1px solid #e1e4e8;
+    padding: 10px 8px;
+    text-align: left;
+}
+.admin-article-container table.admin-table th {
+    background: #f7f7f7;
+    color: #34495e;
+    font-weight: 600;
+}
+
+.admin-article-container table.admin-table tr {
+    transition: background 0.2s;
+}
+.admin-article-container table.admin-table tr.article-row {
+    cursor: pointer;
+    border-bottom: 2px solid #e1e4e8;
+}
+.admin-article-container table.admin-table tr.article-row.active {
+    background: #eaf6ff;
+}
+.admin-article-container table.admin-table tr.article-details-row {
+    background: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    transition: background 0.2s;
+}
+.admin-article-container table.admin-table tr.article-details-row.active {
+    background: #ffe5b2 !important;
+}
+.admin-article-container table.admin-table td {
+    vertical-align: middle;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.admin-article-container table.admin-table td.details-cell {
+    padding: 24px 16px;
+}
+.admin-article-container form {
+    background: #f7f7fa;
+    border-radius: 10px;
+    padding: 18px 20px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: flex-start;
+}
+.admin-article-container form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    color: #34495e;
+    margin-bottom: 0;
+    min-width: 180px;
+}
+.admin-article-container form input[type="text"],
+.admin-article-container form input[type="number"] {
+    margin-top: 6px;
+    padding: 8px 12px;
+    border: 1px solid #dbe2e8;
+    border-radius: 6px;
+    font-size: 1em;
+    min-width: 120px;
+    background: #fff;
+}
+.admin-article-container form select {
+    margin-top: 6px;
+    padding: 8px 12px;
+    border: 1px solid #dbe2e8;
+    border-radius: 6px;
+    font-size: 1em;
+    background: #fff;
+}
+.admin-article-container form button {
+    margin-top: 18px;
+}

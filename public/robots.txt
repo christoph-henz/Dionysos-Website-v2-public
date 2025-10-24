@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Disallow: /src/
+Disallow: /vendor/
+Allow: /
+Sitemap: https://www.dionysos-aburg.de/sitemap.xml

@@ -1,0 +1,399 @@
+/* Layout & Container */
+.intro-container {
+    position: relative;
+    background: url('../img/wood.jpg') center/cover fixed;
+    background-size: 100% 100%;
+    height: 200%;
+    z-index: 1;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 20px;
+    background: url(../img/wood.jpg) center;
+}
+
+/* Reservierungsformular CSS */
+.reservation-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reservation-header h1 {
+    color: #8B4513;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.reservation-header p {
+    color: #666;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.reservation-notice {
+    background: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-left: 4px solid #f39c12;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.reservation-notice p {
+    color: #856404;
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.reservation-notice strong {
+    color: #bf6516;
+}
+
+.outdoor-warning {
+    background: #ffe6e6;
+    border: 1px solid #ffcccc;
+    border-left: 4px solid #dc3545;
+    border-radius: 5px;
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.outdoor-warning p {
+    color: #721c24;
+    font-size: 0.9em;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.outdoor-warning strong {
+    color: #dc3545;
+}
+
+.reservation-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-end; /* Align items at the bottom */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+.form-group label .required {
+    color: #e74c3c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #8B4513;
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+.form-group input.error,
+.form-group select.error {
+    border-color: #e74c3c;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.guests-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.guest-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.guest-option:hover {
+    border-color: #8B4513;
+    background-color: #f9f9f9;
+}
+
+.guest-option.selected {
+    background-color: #8B4513;
+    color: white;
+    border-color: #8B4513;
+}
+
+.guest-option input[type="radio"] {
+    margin: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.custom-guests {
+    display: none;
+    margin-top: 10px;
+}
+
+.custom-guests.show {
+    display: block;
+}
+
+.custom-guests input {
+    width: 80px;
+}
+
+.submit-button {
+    background-color: #8B4513;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-self: center;
+    max-width: 300px;
+}
+
+.submit-button:hover {
+    background-color: #A0522D;
+}
+
+.submit-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.message {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    justify-content: flex-end;
+}
+
+/* Button Styles */
+.btn-primary, .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: #8B4513;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #A0522D;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: #fff;
+    border-color: #8B4513;
+    color: #8B4513;
+}
+
+.btn-secondary:hover {
+    background-color: #f8f8f8;
+    border-color: #A0522D;
+    color: #A0522D;
+}
+
+/* Form Sections */
+.form-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.form-section h3 {
+    color: #8B4513;
+    margin-bottom: 1.5rem;
+}
+
+/* Restaurant Information Section */
+.reservation-info {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #eee;
+}
+
+.info-box {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.info-box h4 {
+    color: #8B4513;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-box ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.info-box ul li:last-child {
+    border-bottom: none;
+}
+
+.opening-hours .day-schedule {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.opening-hours .day-schedule:last-child {
+    border-bottom: none;
+}
+
+.opening-hours .closed {
+    color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reservation-container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .reservation-header h1 {
+        font-size: 2em;
+    }
+    
+    .guests-container {
+        justify-content: center;
+    }
+    
+    .guest-option {
+        flex: 1;
+        justify-content: center;
+        min-width: 80px;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+
+    .info-box {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .reservation-container {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 10px;
+    }
+    
+    .submit-button {
+        width: 100%;
+        max-width: none;
+    }
+}
